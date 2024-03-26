@@ -28,7 +28,7 @@
         Dim a, b, c As Single
         a = TextBox1. Text
         b = TextBox2. Text
-        c= (a*2+0*2)(1/2)
+        c= (a^2+b^2)^(1/2)
         Label3. Text=c
         لیرەدا لەبەتنێکتا داینوسم ٢ تێکست بۆکس دەویت لە دوایدا ئەنجامی هەر دوو تێکست بۆ کسەکە دەکەینە ناو لیبڵەکە 
         Dim texti, text2, text, text As String
@@ -52,6 +52,18 @@
         If myNumber >100 Then,
         Label2. Text = " You win a lucky prize"
         End If 
-        لیرەدا پی دەڵین ئەگەر ژمارەکەمان لەسەرو ١٠٠ بو پیمان بڵیت پیرۆزە براوە بوی </pre>
+        لیرەدا پی دەڵین ئەگەر ژمارەکەمان لەسەرو ١٠٠ بو پیمان بڵیت پیرۆزە براوە بوی <br>
+      Dim Mark As Integer
+Dim Grade as String
+Mark = Val (TextBox1. Text)
+If Mark>=80 Then
+Grade="A"
+ElseIf Mark>=60 And Mark<80 ThenGrade="B"
+ElseIf Mark>=50 And Mark<60 ThenGrade="C"
+Else
+Grade="D"
+End If
+MsgBox"You grade is " & Grade)
+    </pre>
 </body>
 </html>
