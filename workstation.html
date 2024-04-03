@@ -28,6 +28,60 @@
         u=owner ... g=grupe ...o=other ....a= all .... r=read ... w=write ...x=exacuti 
         chmod u-r labrdne  r ... chmod u+r zyad krdne  r  .....  r=4....w=2....x=1...
         chnod 701 ali.txt  wata  ownerman = 7  wa grup =0  wa other =1
+        ....................................................
+
+        Cisco Commands 
+ --- System Configuration 
+ Dialog ---
+Continue with configuration dialog? [yes/no]: setup mode
+Router> User Mode
+Router>enable 
+Router# privileged Mode 
+Router#configure terminal 
+Router(config)# Global Configuration Mode
+exit : to return to previous mode 
+Change the hostname 
+Router(config)#hostname HeadOffice 
+HeadOffice(config)# 
+ر ەدا ناوی ڕاوتەرەکەمانگۆڕیوەبە )
+ین : لێ 
+)تێبی HeadOffice)
+واتە تەنها ناوە و هیچکاریگەریەیک نیە Configurations View
+ی
+ (ئەگونجێت ناوێیککە بەکاربهێنری 
+HeadOffice#show running-config 
+HeadOffice#show ip interface brief 
+Save router configuration to NVRam 
+HeadOffice#copy running-config startup-config 
+HeadOffice#write memory (wr) 
+Banner MOTD message of the day 
+HeadOffice(config)#Banner motd # Unauthorized access suspended # 
+enable password 
+HeadOffice(config)#enable password CISCO 
+enable secret password 
+HeadOffice(config)#enable secret CCNA
+
+        Create user account 
+HeadOffice(config)#username Lab password 123
+HeadOffice(config)#username Lab secret 123
+Console password 
+HeadOffice(config)#line console 0 
+HeadOffice(config-line)#login local
+کردن بە ئەکاونت
+بۆ لۆگئریی
+Stop ip domain lookup 
+HeadOffice(config)#no ip domain-lookup 
+Configure fastethernet interface 
+HeadOffice(config)#interface fastethernet 0/0 
+HeadOffice(config-if)#ip address 192.168.1.1 255.255.255.0 
+HeadOffice(config-if)#no shutdown ( no shut ) 
+Dynamic route 
+HeadOffice(config)#router rip
+HeadOffice(config-router)#network 192.168.1.0 
+HeadOffice(config-router)#network 192.168.2.0 
+Static route 
+HeadOffice(config)#ip route 192.168.2.0 255.255.255.0 192.168.10.1 
+(destination network) (subnetmask) (next hop address) 
     </pre>
 </body>
 </html>
