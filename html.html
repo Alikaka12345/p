@@ -6,94 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-        <pre>   وەرزی یەکەم <br>
-    <br>
-            !--ama la saytaka darnakawet --> <br>
-            h1 align="center"> nwsenaka bo nawaras <br>
-            body bgcolor="yellow"> <br>
-            b> this texstbis bold <b> <br>
-            pre> badli xow sht anwse ba spays w enterw hamwyawa <pre> <br>
-            abbr> title="Ali Kaka">Ak<abbr> <br>
-            del>29$</del> dashkandn <br>
-            h1>  H Sub>2</Sub>O</h1> H2O <br>
-            h1> X Sup>2</Sup></h1> twan <br>
-            kbd>Alikaka < kbd> nwsene keborde <br>
-             & copy; ©   & times;  ×    & divide;    ÷   <br>
-            img src=" nawe rasmaka whids='65' height='30' " alt="">   <br>
-            a href="linke"> < a>   linke   <br>
-            <br>
-            وەرزی دووەم  <br>
-             cols ya3ny stwne rows ya3ni asoyi  <br>
-            frameset cols="25%,50%,25%"> <br>
-               frame src="aaa.html"> <br>
-                    frame src="b.html"> <br>
-                        frame src="c.html"> <br>
-              /frameset> <br>
-              amanay saraw yak shtn dabashkrdne shashakya abet la tage html benwset <br>
-              frameset rows="50%,50%" noresize="noresize">
-                frame src="a.html">  
-                
-                frameset cols="25%,75%">
-                    frame src="b.html">  
-                    frame src="c.html">  
-                /frameset>
-                
-                /frameset> <br>
-            amayan bo awabw agar btawet bashakan jyawaz bn  <br>
+        Visual basik
+وەرزی یەکەم
+        msgbox("sht anwsetw lasar shasha dar akawet ba masj boxek")
+        me.backcolor=color.blue    gorene bagrawnde formaka 
+        me.backcolor=color.fromArgb(0,255,0)   gorene bagrawndaka ba code 
+         MsgBox("anjam akata " & Val(TextBox1.Text) + Val(TextBox2.Text))   anjame kokrdnawa ba masj boxek
+        Label1.Text = Val(TextBox1.Text) + Val(TextBox2.Text)  agar bmanawet ba butnek anjam lanaw layblaka bnwset
+        <br>
+        وەرزی دووەم
+        <br>
+        PictureBox1. Image = Image FromFile("C: \Users\Toshiba\Pictures\My
+        Pictures \USA\Chicago 2012.jpg")
+         
+        بۆ هێنانی وێنە بۆ ناو بۆکس 
+        
+        Dim YourMessage As String
+        YourMessage = "Happy Birthday!"
+        MsgBox (YourMessage)
+        لێرەدا ئەم کۆدە دەکەینە ناو بەتنێک هەرکات پەنجەمان لیدا پیرۆزبایمان لی دەکات 
+        
+        Dim a, b, c As Single
+        a = TextBox1. Text
+        b = TextBox2. Text
+        c= (a^2+b^2)^(1/2)
+        Label3. Text=c
+        لیرەدا لەبەتنێکتا داینوسم ٢ تێکست بۆکس دەویت لە دوایدا ئەنجامی هەر دوو تێکست بۆ کسەکە دەکەینە ناو لیبڵەکە 
+        Dim texti, text2, text, text As String
+        text1 = "Visual"
+        text2 = "Basic"
+        text3 = "2017"
+        text = texti + text2 + text3
+        MsgBox(text4)
+        ئەم کۆدەیان بەکار دێت بۆ لێکدانی نوسینی ناو ٣ تێکست بۆکس ئەنجامەکەی دەکات بە مەسج بۆکس 
+        
+        Dim texti, text As string
+        Dim Text2 As Integer
+        text1 = "Visual"
+        text2 = 22
+        text = text1 & text2
+        MsgBox (text3)
+        ئەمەیش هەمان ئیشی ئەوەی سەرەوە دەکات 
+        
+        Dim myNumber As Integer
+        myNumber = TextBox1. Text-
+        If myNumber >100 Then,
+        Label2. Text = " You win a lucky prize"
+        End If 
+        لیرەدا پی دەڵین ئەگەر ژمارەکەمان لەسەرو ١٠٠ بو پیمان بڵیت پیرۆزە براوە بوی <br>
+      Dim Mark As Integer
+Dim Grade as String
+Mark = Val (TextBox1. Text)
+If Mark>=80 Then
+Grade="A"
+ElseIf Mark>=60 And Mark<80 ThenGrade="B"
+ElseIf Mark>=50 And Mark<60 ThenGrade="C"
+Else
+Grade="D"
+End If
+MsgBox"You grade is " & Grade)
+    keshw balaka lanaw buttna  
+    dim height,weight, as single
+    height =texstbox1.texst
+    weight = texstbox2.texst
+    lable = (weight)/(height^2)
+    agar bmi ayaka naikrd beka ba laible w laxwarawa laeble = bmi
+    dim my texst  as string 
+    my texst="visual basic 2017"
+    msgbox(len(my texst))
+    bozhmardni petakan 
 
-            table border="1" >
-                tr>   
-                    th>name</th> 
-                    th>age</th> 
-                    th>city</th> 
-                    th>blod</th> 
-                tr>
-                tr> 
-                    td>osman salh easul</td> 
-                    td>40</td> 
-                    td>saidsadq</td> 
-                    td>A+</td> 
-                tr>
-                tr> 
-                    td>barham salh easul</td> 
-                    td>40</td> 
-                    td>saidsadq</td> 
-                    td>B+</td> 
-                tr>
-            table> <br>
-            list drwst krdn <br>
-            body>
-                h3>ordered ist</h3> 
-             ol >
-             li>HTML</li>
-             li>database</li>
-             /ol>
-             h3>unordered ist</h3> 
-             ul >
-             li>HTML</li>
-             li>database</li>
-             /ul>
-             /body> <br>
-             h3>ordered ist /h3>   zhmardny xalakan jyawaza 
-ol type="A">
-li>HTML</li>
-li>database</li>
-li>english</li>
-ol>
-h3>unordered ist</h3> 
-ul type="square">
-li>HTML</li>
-li>database</li>
-li>english</li>
-/ul> <br>
-body>  drwst krdne form abet latagy baddy bet
-   form >
-User Name:
-input type="text" name="fistname">
-br>
-Password:
-input type="password" name="password">
-    /form>
 /body> 
 
 <body> 
