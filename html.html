@@ -7,61 +7,62 @@
     <title>Document</title>
 </head>
 <body>
-               jory yakame array 
-<?php
-$names = array ("ali" , "rahand" ,"mhamad");
-echo "my friends are" . $names[0] . "," . $names[1] ."and" . $names[2] ;
-?>
-
-jore dwhame array 
-<?php
-$namesAge = array ("Ali"=>"29", "Rahand"=>"20","mhamad"=>"25");
-echo "Ali's Age is". $namesAge['Ali']."Years old.";
-?>
-...
-jore yakame funshn nawe 2kas bang bkatawa
-<?php
-function qreetperson($name){
-echo "Hi there,".$name;
-}
-qreetperson ("Ali");
-qreetperson ("Rahand");
-?>
-
-jore dwame funshn nawe eshw share kasakai tyabet
-<?php
-function personprofile($name, $city , $job) {
-    echo "this person is".$name . "frpme".$city .".";
-    echo "";
-    echo "his/her job is".$job.".";
-}
-personprofile ("Ali","saidsadq","web div");
- echo "";
- personprofile ("Rahand","slemany","grapik dizine");
- echo "";
- personprofile("mhamad","halabja","tailor");
-?>
-jory seyame funshn  krdary birkare 
-<?php
-function difference ($a , $b){
-    $c =$a - $b ;
-    return $c; }
-    echo "this difference of the given number is :".difference(8,3);
-?>
-
-kode connect lagal databayse 
-<?php
-$servername= "localhost";
-$username="username";
-$password = "password";
-
-$conn = new mysqli($servername , $username ,$password ); 
-
-if ($conn->connect_error) {
-die("connection failed:".$conn->connect_error);
-}
-echo "connected successfuly";
-?>
+               jory yakame array <br>
+<?php<br>
+$names = array ("ali" , "rahand" ,"mhamad");<br>
+echo "my friends are" . $names[0] . "," . $names[1] ."and" . $names[2] ;<br>
+?><br>
+<br>
+jore dwhame array <br>
+<?php<br>
+$namesAge = array ("Ali"=>"29", "Rahand"=>"20","mhamad"=>"25");<br>
+echo "Ali's Age is". $namesAge['Ali']."Years old.";<br>
+?><br>
+...<br>
+jore yakame funshn nawe 2kas bang <br>
+<?php<br>
+function qreetperson($name){<br>
+echo "Hi there,".$name;<br>
+}<br>
+qreetperson ("Ali");<br>
+qreetperson ("Rahand");<br>
+?><br>
+<br>
+jore dwame funshn nawe eshw share kasakai tyabet<br>
+<?php<br>
+function personprofile($name, $city , $job) {<br>
+    echo "this person is".$name . "frpme".$city .".";<br>
+    echo "";<br>
+    echo "his/her job is".$job.".";<br>
+}<br>
+personprofile ("Ali","saidsadq","web div");<br>
+ echo "";<br>
+ personprofile ("Rahand","slemany","grapik dizine");<br>
+ echo "";<br>
+ personprofile("mhamad","halabja","tailor");<br>
+?><br>
+ <br>
+jory seyame funshn  krdary birkare <br>
+<?php<br>
+function difference ($a , $b){<br>
+    $c =$a - $b ;<br>
+    return $c; }<br>
+    echo "this difference of the given number is :".difference(8,3);<br>
+?><br>
+<br>
+kode connect lagal databayse <br>
+<?php<br>
+$servername= "localhost";<br>
+$username="username";<br>
+$password = "password";<br>
+<br>
+$conn = new mysqli($servername , $username ,$password ); <br>
+<br>
+if ($conn->connect_error) {<br>
+die("connection failed:".$conn->connect_error);<br>
+}<br>
+echo "connected successfuly";<br>
+?><br>
 
 
 
