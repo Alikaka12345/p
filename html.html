@@ -7,19 +7,64 @@
     <title>Document</title>
 </head>
 <body>
-                 if (TextBox1.Text.Equals("") || TextBox2.Text.Equals("") || TextBox3.Text.Equals("") ) <br>
-               {<br>
-               Label3.Text = "تکایە سەرجەم خانەکان پڕبکەرەوە";<br>
-}<br>
-          else if (TextBox2.Text.Equals("halabja") || TextBox2.Text.Equals("slemani"))<br>
-           {v
-               Label3.Text = "بەرنامەکان تەنها کە شاری هەولێر بەردەستە";<br>
-           }<br>
-           else<br>
-           {<br>
-               Label3.Text = "ناوت تۆمار کرا";<br>
-           }<br>
-       }<br>
+               jory yakame array 
+<?php
+$names = array ("ali" , "rahand" ,"mhamad");
+echo "my friends are" . $names[0] . "," . $names[1] ."and" . $names[2] ;
+?>
+
+jore dwhame array 
+<?php
+$namesAge = array ("Ali"=>"29", "Rahand"=>"20","mhamad"=>"25");
+echo "Ali's Age is". $namesAge['Ali']."Years old.";
+?>
+...
+jore yakame funshn nawe 2kas bang bkatawa
+<?php
+function qreetperson($name){
+echo "Hi there,".$name;
+}
+qreetperson ("Ali");
+qreetperson ("Rahand");
+?>
+
+jore dwame funshn nawe eshw share kasakai tyabet
+<?php
+function personprofile($name, $city , $job) {
+    echo "this person is".$name . "frpme".$city .".";
+    echo "";
+    echo "his/her job is".$job.".";
+}
+personprofile ("Ali","saidsadq","web div");
+ echo "";
+ personprofile ("Rahand","slemany","grapik dizine");
+ echo "";
+ personprofile("mhamad","halabja","tailor");
+?>
+jory seyame funshn  krdary birkare 
+<?php
+function difference ($a , $b){
+    $c =$a - $b ;
+    return $c; }
+    echo "this difference of the given number is :".difference(8,3);
+?>
+
+kode connect lagal databayse 
+<?php
+$servername= "localhost";
+$username="username";
+$password = "password";
+
+$conn = new mysqli($servername , $username ,$password ); 
+
+if ($conn->connect_error) {
+die("connection failed:".$conn->connect_error);
+}
+echo "connected successfuly";
+?>
+
+
+
 
 
 
